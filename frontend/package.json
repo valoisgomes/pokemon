@@ -1,0 +1,45 @@
+{
+  "name": "pokemon-center-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest --config jest.config.js",
+    "test:watch": "jest --config jest.config.js --watch",
+    "test:cov": "jest --config jest.config.js --coverage"
+  },
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "axios": "^1.6.8",
+    "react-hook-form": "^7.51.3",
+    "@hookform/resolvers": "^3.3.4",
+    "zod": "^3.23.4",
+    "js-cookie": "^3.0.5",
+    "react-hot-toast": "^2.4.1",
+    "lucide-react": "^0.378.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/js-cookie": "^3.0.6",
+    "tailwindcss": "^3.4.3",
+    "postcss": "^8",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "@testing-library/react": "^15.0.6",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/user-event": "^14.5.2",
+    "ts-jest": "^29.1.2",
+    "@types/jest": "^29.5.12"
+  }
+}

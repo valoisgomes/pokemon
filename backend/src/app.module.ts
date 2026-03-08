@@ -23,8 +23,8 @@ import { Pokemon } from './pokemons/entities/pokemon.entity';
             type: 'postgres',
             url: databaseUrl,
             entities: [User, Pokemon],
-            synchronize: !isProduction,
-            ssl: isProduction ? { rejectUnauthorized: false } : false,
+            synchronize: true,
+            ssl: { rejectUnauthorized: false },
           };
         }
 
@@ -36,8 +36,7 @@ import { Pokemon } from './pokemons/entities/pokemon.entity';
           password: configService.get('DB_PASSWORD', 'postgres'),
           database: configService.get('DB_DATABASE', 'pokemon_center'),
           entities: [User, Pokemon],
-          synchronize: !isProduction,
-          logging: !isProduction,
+          synchronize: true,
         };
       },
       inject: [ConfigService],
